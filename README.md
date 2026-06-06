@@ -2,14 +2,13 @@
 
 ## Como utilizar
 
-Implemente e execute o arquivo [App.java](src/App.java). O programa possui um menu principal com os 6 exercicios:
+Implemente e execute o arquivo [App.java](src/App.java). O programa possui um menu principal com os 5 exercicios:
 
 1. Fila com valores fixos
 2. Fila de nomes
 3. Remover 10 numeros da fila
-4. Menu interativo de fila
-5. Fila de atendimento
-6. Fila de impressao
+4. Fila de atendimento
+5. Fila de impressao
 
 Para compilar e executar:
 
@@ -73,20 +72,6 @@ public static List<Integer> removerTodosElementos(Queue<Integer> fila)
 
 ### Exercicio 04
 
-Crie um programa em Java com menu interativo contendo:
-
-```text
-1 - Enfileirar
-2 - Desenfileirar
-3 - Mostrar inicio
-4 - Mostrar fila
-5 - Sair
-```
-
-O usuario devera manipular a fila dinamicamente.
-
-### Exercicio 05
-
 Crie uma simulacao de fila de atendimento.
 
 O sistema deve permitir:
@@ -102,7 +87,7 @@ Metodo esperado pelo autograder:
 public static List<String> atenderClientes(Queue<String> fila)
 ```
 
-### Exercicio 06
+### Exercicio 05
 
 Crie uma simulacao de fila de impressao.
 
@@ -130,4 +115,4 @@ javac -d bin src/App.java autograde/Autograder.java
 java -cp bin autograde.Autograder ex1
 ```
 
-Modos disponiveis: `ex1`, `ex2`, `ex3`, `ex4`, `ex5`, `ex6`.
+Modos disponiveis: `ex1`, `ex2`, `ex3`, `ex4`, `ex5`.

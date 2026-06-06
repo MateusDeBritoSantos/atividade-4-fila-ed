@@ -9,7 +9,7 @@ public class Autograder {
 
     public static void main(String[] args) {
         if (args.length == 0) {
-            fail("Modo nao informado. Use: ex1 | ex2 | ex3 | ex4 | ex5 | ex6");
+            fail("Modo nao informado. Use: ex1 | ex2 | ex3 | ex4 | ex5");
         }
 
         try {
@@ -29,9 +29,6 @@ public class Autograder {
                     break;
                 case "ex5":
                     testEx5();
-                    break;
-                case "ex6":
-                    testEx6();
                     break;
                 default:
                     fail("Modo invalido: " + mode);
@@ -91,16 +88,6 @@ public class Autograder {
     }
 
     private static void testEx4() throws Exception {
-        Queue<Integer> fila = new LinkedList<>();
-        fila.add(15);
-        fila.add(30);
-
-        assertTrue(fila.peek().equals(15), "Mostrar inicio deve apontar para o primeiro valor enfileirado");
-        assertTrue(fila.poll().equals(15), "Desenfileirar deve remover o inicio da fila");
-        assertTrue(fila.peek().equals(30), "O novo inicio deve ser o proximo valor da fila");
-    }
-
-    private static void testEx5() throws Exception {
         Class<?> clazz = Class.forName("App");
         Method method = clazz.getMethod("atenderClientes", Queue.class);
 
@@ -119,7 +106,7 @@ public class Autograder {
         assertTrue(atendidos.get(2).equals("Pedro"), "Pedro deve ser o ultimo cliente atendido");
     }
 
-    private static void testEx6() throws Exception {
+    private static void testEx5() throws Exception {
         Class<?> clazz = Class.forName("App");
         Method adicionar = clazz.getMethod("adicionarDocumento", Queue.class, String.class);
         Method imprimir = clazz.getMethod("imprimirDocumento", Queue.class);

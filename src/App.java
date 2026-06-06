@@ -30,9 +30,6 @@ public class App {
                 case 5:
                     executarExercicio05(scanner);
                     break;
-                case 6:
-                    executarExercicio06(scanner);
-                    break;
                 case 0:
                     System.out.println("Encerrando o programa.");
                     break;
@@ -52,9 +49,8 @@ public class App {
         System.out.println("1 - Fila com valores fixos");
         System.out.println("2 - Fila de nomes");
         System.out.println("3 - Remover 10 numeros da fila");
-        System.out.println("4 - Menu interativo de fila");
-        System.out.println("5 - Fila de atendimento");
-        System.out.println("6 - Fila de impressao");
+        System.out.println("4 - Fila de atendimento");
+        System.out.println("5 - Fila de impressao");
         System.out.println("0 - Sair");
     }
 
@@ -90,10 +86,6 @@ public class App {
     }
 
     private static void executarExercicio05(Scanner scanner) {
-
-    }
-
-    private static void executarExercicio06(Scanner scanner) {
 
     }
 
